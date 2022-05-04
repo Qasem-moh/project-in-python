@@ -12,3 +12,14 @@ s1 = list(string.ascii_lowercase)
 s2 = list(string.ascii_uppercase)
 s3 = list(string.digits)
 s4 = list(string.punctuation)
+character_number = int(input("Enter number of characters: "))
+
+while True:
+    try:
+        if character_number < 6:
+            input("Enter number grater than 6: ")
+            character_number = int(input("Enter number of characters: "))
+        else:
+            break
+    except ValueError:
+        print("Enter number only")
